@@ -1,0 +1,6 @@
+model Feedback {
+  id        String   @id @default(cuid())
+  type      String
+  content   String
+  createdAt DateTime @default(now())
+}
